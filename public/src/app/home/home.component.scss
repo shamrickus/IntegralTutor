@@ -1,0 +1,99 @@
+$small: 570px;
+
+.mat-card {
+  height: 100%;
+  padding: 0;
+}
+
+div.background {
+  background-image: url("background.jpg");
+  height: 100%;
+  width: 100%;
+  background-position-y: 32%;
+
+  div.infoBox {
+    width: 82%;
+    min-height: 165px;
+    max-height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #222547;
+    background-color: rgba(65, 63, 75, 0.5);
+    color: white;
+
+    padding: 5px 10px 5px 10px;
+
+    h1, p {
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
+
+.bleedBox {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: #26294C;
+  right: calc(-1 * (100vw - 100%) / 2);
+  top: 0;
+  z-index: -1;
+}
+
+.mat-grid-tile {
+  overflow: visible;
+}
+
+.contentBox {
+  height: 100%;
+  width: 100%;
+}
+
+.contentBox {
+  background-color: #3E4281;
+  color: white;
+  text-align: center;
+  margin: auto;
+
+  p {
+    font-weight: 600;
+
+    &:first-of-type {
+      margin-top: 15px;
+    }
+  }
+
+  @media (max-width: $small) {
+    font-size: 2.0vmax;
+  }
+
+  button {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: black;
+  }
+
+  @media (max-width: $small) {
+
+  }
+}
+
+.textWrapper {
+  height: 400px;
+  .selfPortrait {
+    background-color: grey;
+    height: 300px;
+    width: 400px;
+
+  }
+}
+
+

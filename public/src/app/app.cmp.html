@@ -1,0 +1,15 @@
+<div id='mainContent'>
+    <div class='titleBar md-padding'>
+        The Integral Tutor
+    </div>
+    <nav mat-tab-nav-bar class="mat-card">
+        <a mat-tab-link
+           *ngFor="let routeLink of routeLinks"
+           [routerLink]="routeLink.link"
+           routerLinkActive #rla="routerLinkActive"
+           [active]="rla.isActive">
+            {{routeLink.label}}
+        </a>
+    </nav>
+    <router-outlet></router-outlet>
+</div>

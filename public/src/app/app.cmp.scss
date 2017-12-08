@@ -1,0 +1,55 @@
+$maxWidth: 950px;
+$minWidth: 400px;
+
+#mainContent {
+  height: 100%;
+}
+
+#content {
+  margin-top: 15px;
+}
+
+.ty-card {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: white;
+}
+
+#mainContent {
+  margin: auto;
+  max-width: $maxWidth;
+  min-width: $minWidth;
+  width: 100%;
+}
+
+.titleBar {
+  font-size: 36px;
+  font-family: Optima, serif;
+}
+
+.marginLeftAuto {
+  margin-left: auto;
+}
+
+.middleAlign, .marginAuto {
+  margin: auto;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.taCenter {
+  text-align: center;
+}
+
+.mat-tab-header, .mat-tab-nav-bar {
+  border-bottom: none;
+}
+
+nav.mat-card { 
+  padding: 0;
+}
