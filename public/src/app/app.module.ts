@@ -27,7 +27,7 @@ const appRoutes: Routes = [
 
 @NgModule({
 	declarations: [
-		AppComponent,npm
+		AppComponent,
 		AboutComponent,
 		HomeComponent,
 		CalComponent,
