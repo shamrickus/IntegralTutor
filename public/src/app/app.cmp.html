@@ -1,15 +1,27 @@
-<div id='mainContent'>
-    <div class='titleBar md-padding'>
+<div fxLayout="row">
+  <div id='mainContent' fxLayout="column">
+    <div fxLayout="row" class="header">
+      <div class='titleBar'>
         The Integral Tutor
+      </div>
+      <div fxFlex></div>
+      <div>
+        <!--<ty-login></ty-login>-->
+      </div>
     </div>
     <nav mat-tab-nav-bar class="mat-card">
-        <a mat-tab-link
-           *ngFor="let routeLink of routeLinks"
-           [routerLink]="routeLink.link"
-           routerLinkActive #rla="routerLinkActive"
-           [active]="rla.isActive">
-            {{routeLink.label}}
-        </a>
+      <a mat-tab-link
+         *ngFor="let routeLink of routeLinks"
+         [routerLink]="routeLink.link"
+         routerLinkActive #rla="routerLinkActive"
+         [active]="rla.isActive">
+        {{routeLink.label}}
+      </a>
     </nav>
-    <router-outlet></router-outlet>
+
+    <main [@routerTransition]="getState(route)">
+      <router-outlet #route="outlet"></router-outlet>
+    </main>
+  </div>
 </div>
+

@@ -1,24 +1,24 @@
 $maxWidth: 950px;
 $minWidth: 400px;
-
-#mainContent {
+div {
   height: 100%;
+  width: 100%;
+  #mainContent {
+    height: 100%;
+    margin: auto;
+    max-width: $maxWidth;
+    min-width: $minWidth;
+
+    .header {
+      padding: 5px 10px 5px 10px;
+    }
+  }
 }
+
+
 
 #content {
   margin-top: 15px;
-}
-
-.ty-card {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  background-color: white;
-}
-
-#mainContent {
-  margin: auto;
-  max-width: $maxWidth;
-  min-width: $minWidth;
-  width: 100%;
 }
 
 .titleBar {
@@ -50,6 +50,6 @@ $minWidth: 400px;
   border-bottom: none;
 }
 
-nav.mat-card { 
+nav.mat-card {
   padding: 0;
 }

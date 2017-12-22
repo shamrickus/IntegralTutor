@@ -1,4 +1,11 @@
-<mat-card>
+<mat-card fxLayout="column">
+    <mat-card-header fxLayout="column">
+      <h3>
+        For scheduling with me, please first read about my <a routerLink="/policies">Rates and Policies</a> and then see my calendar below. Any time that isn’t marked as busy is available.
+      <br /><br />
+        For first time clients, please let me know a bit about your circumstances and I will be in contact with you for introductions.
+      </h3>
+    </mat-card-header>
     <iframe [src]="url | sanitize" frameborder="0" scrolling="no">Can't load Google Calander</iframe>
     <mat-grid-list cols="4" rowHeight="60px">
         <mat-grid-tile [colspan]="2">

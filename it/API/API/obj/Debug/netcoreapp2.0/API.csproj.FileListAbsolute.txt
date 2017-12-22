@@ -1,0 +1,10 @@
+F:\Ty\it\API\API\bin\Debug\netcoreapp2.0\API.deps.json
+F:\Ty\it\API\API\bin\Debug\netcoreapp2.0\API.runtimeconfig.json
+F:\Ty\it\API\API\bin\Debug\netcoreapp2.0\API.runtimeconfig.dev.json
+F:\Ty\it\API\API\bin\Debug\netcoreapp2.0\API.dll
+F:\Ty\it\API\API\bin\Debug\netcoreapp2.0\API.pdb
+F:\Ty\it\API\API\obj\Debug\netcoreapp2.0\API.csproj.CoreCompileInputs.cache
+F:\Ty\it\API\API\obj\Debug\netcoreapp2.0\API.AssemblyInfoInputs.cache
+F:\Ty\it\API\API\obj\Debug\netcoreapp2.0\API.AssemblyInfo.cs
+F:\Ty\it\API\API\obj\Debug\netcoreapp2.0\API.dll
+F:\Ty\it\API\API\obj\Debug\netcoreapp2.0\API.pdb

@@ -10,6 +10,12 @@ import {RouterModule, Routes} from "@angular/router";
 import { SanitizePipe } from './services/sanitize.pipe';
 import { PoliciesComponent } from './policies/policies.component';
 import {MaterialModule} from "./app.material";
+import {LoginComponent, LoginDialog} from './login/login.component';
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {RequestService} from "./services/request.service";
+import {HttpClientModule} from "@angular/common/http";
+import { OAuthModule } from 'angular-oauth2-oidc';
 
 const appRoutes: Routes = [
 	{path: 'about', component: AboutComponent},
@@ -27,18 +33,30 @@ const appRoutes: Routes = [
 		HomeComponent,
 		CalComponent,
 		PoliciesComponent,
-		SanitizePipe
+		SanitizePipe,
+		LoginComponent,
+		LoginDialog
 	],
 	imports: [
 		BrowserModule,
 		BrowserAnimationsModule,
 		MaterialModule,
+		FlexLayoutModule,
+		FormsModule,
+		ReactiveFormsModule,
+    HttpClientModule,
+    OAuthModule.forRoot(),
 		RouterModule.forRoot(
 			appRoutes,
 			{enableTracing: false}
 		)
 	],
-	providers: [],
+	providers: [
+	  RequestService
+  ],
+	entryComponents: [
+		LoginDialog
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule {
