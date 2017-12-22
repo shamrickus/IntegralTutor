@@ -15,7 +15,6 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RequestService} from "./services/request.service";
 import {HttpClientModule} from "@angular/common/http";
-import { OAuthModule } from 'angular-oauth2-oidc';
 
 const appRoutes: Routes = [
 	{path: 'about', component: AboutComponent},
@@ -28,7 +27,7 @@ const appRoutes: Routes = [
 
 @NgModule({
 	declarations: [
-		AppComponent,
+		AppComponent,npm
 		AboutComponent,
 		HomeComponent,
 		CalComponent,
@@ -45,7 +44,6 @@ const appRoutes: Routes = [
 		FormsModule,
 		ReactiveFormsModule,
     HttpClientModule,
-    OAuthModule.forRoot(),
 		RouterModule.forRoot(
 			appRoutes,
 			{enableTracing: false}
